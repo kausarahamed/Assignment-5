@@ -26,7 +26,7 @@
                     <div class="text-center">
                         <h4 class="text-3xl text-center mt-5 font-semibold">Income</h4>
                         <label class="mt-5 labelforexpwnces">
-                            <span class=" text-center font-semibold">Income:</span> <input class="border-2 px-2  rounded  border-gray-400 bg-gray-200" type="text" placeholder="Taka" />
+                            <span class=" text-center font-semibold">Income:</span> <input id="incomeInput" class="border-2 px-2  rounded  border-gray-400 bg-gray-200" type="number" placeholder="Taka" />
                           
                         </label>
                     </div>
@@ -37,25 +37,25 @@
                         <h4 class="text-3xl text-center mt-5 font-semibold">Expences</h4>
 
                         <label class="labelforexpwnces text-center mt-5">
-                            <span class=" text-center font-semibold">Food:</span> <input class="border-2 rounded px-2 border-gray-400 bg-gray-200" type="text" placeholder="Taka" />
+                            <span class=" text-center font-semibold">Food:</span> <input id="foodInput" class="border-2 rounded px-2 border-gray-400 bg-gray-200" type="number" placeholder="Taka" />
                         </label>
                       
                       <label>
-                            <span class="labelforexpwnces text-center font-semibold">Rent:</span> <input class="border-2   px-2 rounded  border-gray-400 bg-gray-200" type="text" placeholder="Taka" />
+                            <span class="labelforexpwnces text-center font-semibold">Rent:</span> <input  id="rentInput" class="border-2   px-2 rounded  border-gray-400 bg-gray-200" type="number" placeholder="Taka" />
                       </label>
                       
                       <label>
-                            <span class="labelforexpwnces text-center font-semibold">Clothes:</span> <input class="border-2 px-2  rounded border-gray-400 bg-gray-200" type="text" placeholder="Taka" />
+                            <span class="labelforexpwnces text-center font-semibold">Clothes:</span> <input id="clothesInput" class="border-2 px-2  rounded border-gray-400 bg-gray-200" type="number" placeholder="Taka" />
                       </label>
 
                         <div class="text-center mt-5">
-                            <button class=" bg-yellow-500 rounded py-3 px-5 text-white font-medium">Calculationt</button>
+                            <button id="calculation-Input" class=" bg-yellow-500 rounded py-3 px-5 text-white font-medium">Calculationt</button>
                         </div>
 
 
                         <div class=" text-center font-semibold mt-5">
-                            <p> <span>Total Expenses:</span> 5500 </p>
-                            <p class="mt-3"><span>Balance:</span> 4500 </p>
+                            <p> Total Expenses: <span id="expence">00</span> </p>
+                            <p class="mt-3">Balance: <span id="balances">00</span> </p>
                         </div>
 
                         <div class="text-center mt-5">
@@ -69,6 +69,12 @@
                         <div class=" text-center font-semibold mt-5">
                             <p> <span>Saving Amount:</span> 5500 </p>
                             <p class="mt-3"><span>Remaining Balance:</span> 4500 </p>
+                        </div>
+
+                        <div class="notify-section ">
+                            <p class="notify items-center" id="error">Please Input Valid number </p>
+
+                            <p class="notify">Success</p>
                         </div>
                          
                     </div>
