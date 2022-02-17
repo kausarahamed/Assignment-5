@@ -1,5 +1,5 @@
 const balancesMoney = document.getElementById('balances')
-
+// calculation part start
 document.getElementById('calculation-Input').addEventListener('click' ,function () {
  
    const inputmoney = document.getElementById('incomeInput');
@@ -49,8 +49,9 @@ document.getElementById('calculation-Input').addEventListener('click' ,function 
     balancesMoney.innerText = parseFloat(inputMoneyAmount) - totalAmount;
     
 })
+//calculation part end
 
-
+//save-section start
 function saveMoney(){
  const money = document.getElementById('saveId');
  const inputmoney = document.getElementById('incomeInput');
@@ -60,3 +61,4 @@ function saveMoney(){
  remainingMoney.innerText = balancesMoney.innerText - saveTaka.innerText;
 }
 
+// save part end
